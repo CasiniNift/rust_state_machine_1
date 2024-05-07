@@ -1,0 +1,16 @@
+Make Balances Pallet Generic
+Our goal over the next few steps will be to continually make our runtime more generic and configurable over the types we use in our Pallets.
+
+Why Generic?
+The flexibility of generic runtime means that we can write code which works for multiple different configurations and types.
+
+For example, up until now, we have been using &'static str to represent the accounts of users. This is obviously not the right thing to do, but is easy to implement for a basic blockchain tutorial like this.
+
+What would you need to change in order to use more traditional cryptographic public keys?
+
+Well, currently there are definitions of the account type in both the Balances Pallet and the System Pallet. Imagine if you had many more Pallets too! Such refactoring could be very difficult, but also totally avoided if we used generic types to begin with.
+
+Truthfully, the advantage of generic types will not be super obvious in this tutorial, but when building a blockchain SDK like the Substrate, this kind of flexibility will allow ecosystem developers to reach their full potential.
+
+For example, teams have used Substrate to build fully compatible Ethereum blockchains, while other teams have experimented with cutting edge cryptographic primitives. This generic framework allows both teams to be successful.
+

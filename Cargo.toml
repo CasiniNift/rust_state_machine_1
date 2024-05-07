@@ -1,0 +1,9 @@
+[package]
+name = "rust_state_machine_1"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+num = "0.4"
+macros = { path = "./macros/" }
+
